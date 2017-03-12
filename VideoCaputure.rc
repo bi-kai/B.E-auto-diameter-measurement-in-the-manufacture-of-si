@@ -1,0 +1,409 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VideoCaputure.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\VideoCaputure.ico"
+IDI_ICON_OFF            ICON    DISCARDABLE     "res\\ICON_NOT.ico"
+IDI_ICON_RED            ICON    DISCARDABLE     "res\\ICON_ON.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VideoCaputure"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VideoCaputure 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_VIDEOCAPUTURE_DIALOG DIALOGEX 0, 0, 539, 350
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VideoCaputure"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_VIDEO,"Static",SS_BLACKRECT,7,7,390,306
+    PUSHBUTTON      "采集光圈",IDC_START,398,8,60,25
+    GROUPBOX        "模式选择",IDC_STATIC,400,36,122,30
+    PUSHBUTTON      "引晶",IDC_Yinjing,401,46,35,15
+    PUSHBUTTON      "放肩",IDC_Fangjian,442,46,35,15
+    PUSHBUTTON      "等径",IDC_Dengjing,483,46,35,15
+    GROUPBOX        "调整权值(输入0~255之间的数)",IDC_STATIC,400,133,117,108
+    EDITTEXT        IDC_EDIT1,403,158,40,14,ES_AUTOHSCROLL
+    LTEXT           "权值一",IDC_STATIC,409,144,25,8
+    LTEXT           "权值二",IDC_STATIC,409,176,25,8
+    LTEXT           "权值三",IDC_STATIC,410,207,25,8
+    EDITTEXT        IDC_EDIT2,404,190,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,404,221,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "直径测量",IDC_STATIC,399,243,132,69
+    LTEXT           "当前直径",IDC_STATIC,403,260,33,8
+    EDITTEXT        IDC_EDIT6,440,257,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "调整直径",IDC_CHANGERADIUS,482,257,44,14
+    PUSHBUTTON      "确定",IDC_BTNOK,453,167,39,14
+    PUSHBUTTON      "权值调整",IDC_SELECTZONE,453,147,39,14
+    PUSHBUTTON      "扫描线上移",IDC_AutoMeasure,406,274,52,14
+    PUSHBUTTON      "软件测试",IDC_ReadAVI,400,77,46,14
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,459,208,25,25
+    PUSHBUTTON      "扫描线下移",IDC_AutoMeasureDown,467,274,52,14
+    PUSHBUTTON      "扫描线复位",IDC_AutoMeasureReset,406,292,52,14
+    GROUPBOX        "串口",IDC_STATIC,399,313,124,30
+    PUSHBUTTON      "打开串口",IDC_OPENCLOSEPORT,429,324,42,14
+    PUSHBUTTON      "配置串口",IDC_CONFIGPORT,475,324,44,14
+    ICON            IDI_ICON_OFF,IDC_STATIC_OPENOFF,401,321,20,20,
+                    SS_CENTERIMAGE,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    PUSHBUTTON      "切换自动模式",IDC_AutoChangeMode,460,8,60,25
+    GROUPBOX        "软件测试",IDC_STATIC,399,68,100,30
+    PUSHBUTTON      "二值化测试",IDC_Threshold,448,77,46,14
+    PUSHBUTTON      "缺省",IDC_BTNquanDefult,453,189,39,14
+    GROUPBOX        "配置设置",IDC_STATIC,399,99,101,30
+    PUSHBUTTON      "保存配置",IDC_Threshold2,453,110,40,14
+    PUSHBUTTON      "读取配置",IDC_Threshold3,404,110,40,14
+END
+
+IDD_CHANGERADIUS DIALOG DISCARDABLE  0, 0, 187, 72
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AdjustRadius"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,45,41,14
+    LTEXT           "人工测量直径：",IDC_STATIC,22,26,63,11
+    EDITTEXT        IDC_EDIT1,95,23,40,14,ES_AUTOHSCROLL
+END
+
+IDD_MeasureDiameter DIALOG DISCARDABLE  0, 0, 223, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,142,38,33,14
+    LTEXT           "端口",IDC_STATIC,16,17,17,8
+    COMBOBOX        IDC_COMBO_COMSELECT,35,13,35,85,CBS_DROPDOWN | 
+                    WS_VSCROLL
+    LTEXT           "波特率",IDC_STATIC,78,17,24,10
+    LTEXT           "校验位",IDC_STATIC,152,17,24,10
+    LTEXT           "数据位",IDC_STATIC,8,36,24,10
+    LTEXT           "停止位",IDC_STATIC,79,35,24,10
+    COMBOBOX        IDC_COMBO_SPEED,105,14,35,105,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PARITY,180,15,35,89,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOPBITS,104,34,35,73,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATABITS,35,34,35,81,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "取消",IDCANCEL,181,38,35,14
+END
+
+IDD_MASK DIALOG DISCARDABLE  7, 7, 358, 285
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+END
+
+IDD_SoftKeyboard DIALOG DISCARDABLE  0, 0, 167, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "软键盘"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,70,129,35,14
+    PUSHBUTTON      "取消",IDCANCEL,114,129,37,14
+    EDITTEXT        IDC_SOFTKEYBOARDEDITNUM,7,7,153,15,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "1",IDC_SOFTKEYBOARDBTN1,14,26,41,19
+    PUSHBUTTON      "4",IDC_SOFTKEYBOARDBTN4,14,54,41,19
+    PUSHBUTTON      "2",IDC_SOFTKEYBOARDBTN2,62,26,41,19
+    PUSHBUTTON      "5",IDC_SOFTKEYBOARDBTN5,62,54,41,19
+    PUSHBUTTON      "3",IDC_SOFTKEYBOARDBTN3,110,26,41,19
+    PUSHBUTTON      "8",IDC_SOFTKEYBOARDBTN8,62,79,41,19
+    PUSHBUTTON      "9",IDC_SOFTKEYBOARDBTN9,110,79,41,19
+    PUSHBUTTON      "6",IDC_SOFTKEYBOARDBTN6,110,54,41,19
+    PUSHBUTTON      "7",IDC_SOFTKEYBOARDBTN7,14,79,41,19
+    PUSHBUTTON      "b",IDC_SOFTKEYBOARDBTNBACK,110,103,41,19
+    PUSHBUTTON      ".",IDC_SOFTKEYBOARDBTNDIAN,62,103,41,19
+    PUSHBUTTON      "0",IDC_SOFTKEYBOARDBTN0,14,103,41,19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "VideoCaputure Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "VideoCaputure\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VideoCaputure.EXE\0"
+            VALUE "ProductName", "VideoCaputure 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VIDEOCAPUTURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 531
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+
+    IDD_CHANGERADIUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_MeasureDiameter, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_MASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+
+    IDD_SoftKeyboard, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VIDEOCAPUTURE_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_MeasureDiameter DLGINIT
+BEGIN
+    IDC_COMBO_COMSELECT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_COMSELECT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_COMSELECT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_COMSELECT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_SPEED, 0x403, 4, 0
+0x3033, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 4, 0
+0x3036, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    IDC_COMBO_SPEED, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    IDC_COMBO_SPEED, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    IDC_COMBO_SPEED, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO_SPEED, 0x403, 6, 0
+0x3931, 0x3032, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 6, 0
+0x3833, 0x3034, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 6, 0
+0x3334, 0x3030, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 6, 0
+0x3635, 0x3030, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO_SPEED, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_COMBO_PARITY, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_COMBO_PARITY, 0x403, 4, 0
+0x444f, 0x0044, 
+    IDC_COMBO_PARITY, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_COMBO_STOPBITS, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_STOPBITS, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_DATABITS, 0x403, 2, 0
+0x0036, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VideoCaputure(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\VideoCaputure.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
