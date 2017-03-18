@@ -203,12 +203,12 @@ SOURCE=.\ReadMe.txt
 # End Source File
 # End Target
 # End Project
-# Section VideoCaputure : {648A5600-2C6E-101B-82B6-000000000014}
-# 	2:21:DefaultSinkHeaderFile:mscomm.h
-# 	2:16:DefaultSinkClass:CMSComm
-# End Section
 # Section VideoCaputure : {E6E17E90-DF38-11CF-8E74-00A0C90F26F8}
 # 	2:5:Class:CMSComm
 # 	2:10:HeaderFile:mscomm.h
 # 	2:8:ImplFile:mscomm.cpp
+# End Section
+# Section VideoCaputure : {648A5600-2C6E-101B-82B6-000000000014}
+# 	2:21:DefaultSinkHeaderFile:mscomm.h
+# 	2:16:DefaultSinkClass:CMSComm
 # End Section

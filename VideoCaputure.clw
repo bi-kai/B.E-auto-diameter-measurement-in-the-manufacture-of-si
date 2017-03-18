@@ -2,7 +2,7 @@
 
 [General Info]
 Version=1
-LastClass=CVideoCaputureDlg
+LastClass=CMeasureDiamete
 LastTemplate=CDialog
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "VideoCaputure.h"
@@ -13,13 +13,13 @@ Class2=CVideoCaputureDlg
 Class3=CAboutDlg
 
 ResourceCount=7
-Resource1=IDD_ABOUTBOX
+Resource1=IDD_MeasureDiameter
 Resource2=IDR_MAINFRAME
-Resource3=IDD_CHANGERADIUS
+Resource3=IDD_ABOUTBOX
 Class4=CChangeRadius
 Class5=CMaskDialog
 Class6=CMeasureDiamete
-Resource4=IDD_MeasureDiameter
+Resource4=IDD_CHANGERADIUS
 Resource5=IDD_MASK
 Class7=CSoftKeyboard
 Resource6=IDD_VIDEOCAPUTURE_DIALOG
@@ -30,13 +30,14 @@ Type=0
 HeaderFile=VideoCaputure.h
 ImplementationFile=VideoCaputure.cpp
 Filter=N
+LastObject=IDC_EDIT1
 
 [CLS:CVideoCaputureDlg]
 Type=0
 HeaderFile=VideoCaputureDlg.h
 ImplementationFile=VideoCaputureDlg.cpp
 Filter=D
-LastObject=IDC_AutoChangeMode
+LastObject=IDC_EDIT1
 BaseClass=CDialog
 VirtualFilter=dWC
 
@@ -45,6 +46,7 @@ Type=0
 HeaderFile=VideoCaputureDlg.h
 ImplementationFile=VideoCaputureDlg.cpp
 Filter=D
+LastObject=CAboutDlg
 
 [DLG:IDD_ABOUTBOX]
 Type=1
@@ -159,7 +161,7 @@ ImplementationFile=SoftKeyboard.cpp
 BaseClass=CDialog
 Filter=D
 VirtualFilter=dWC
-LastObject=CSoftKeyboard
+LastObject=IDC_SOFTKEYBOARDEDITNUM
 
 [DLG:IDD_SoftKeyboard]
 Type=1
